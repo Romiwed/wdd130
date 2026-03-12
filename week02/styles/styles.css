@@ -5,8 +5,8 @@ nav {
 
 nav a {
     color: white;
-    display: block;
     padding: 20px;
+    display: block;
 }
 
 main {
@@ -25,22 +25,22 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0;
-}
-
 aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: #eeeeee;
+    color: #333333;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+p {
+    padding: 0;
 }
 
 footer {
