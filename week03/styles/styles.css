@@ -1,0 +1,17 @@
+:root {
+    --heading-bg: #f06;
+    --text-color: #333;
+    --font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+}
+
+h1 {
+    background-color: var(--heading-bg);
+    color: var(--text-color);
+    font-family: var(--font);
+    padding: var(--padding);
+}
+
+aside {
+    padding: var(--padding);
+}
