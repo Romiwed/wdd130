@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>W03 Code Comments</title>
+</head>
+<!-- <body> -->
+<h1>Learning Code Comments</h1>
+<!-- This is an HTML comment -->
+<p>This paragraph is visible on the page.</p>
+<!-- 
+    This paragraph is commented out
+    It will NOT appear in the browser
+    -->
+<!-- <p>This text is hidden</p> -->
+<div id="note">
+    <p>Testing the <code>note</code> ID.</p>
+</div>
+<!-- Best practices section -->
+<section id="best-practice">
+    <ul>
+        <li><strong>DO NOT</strong> use the same ID on multiple elements</li>
+        <li><strong>DO NOT</strong> use IDs for styling many elements</li>
+        <li><strong>DO NOT</strong> start names with numbers</li>
+        <li><strong>DO NOT</strong> use spaces (use hyphens or underscores)</li>
+    </ul>
+</section>
+</body>
+
+</html>
