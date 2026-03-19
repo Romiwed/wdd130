@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #1d5b79;
+    --secondary-color: #2e8bc0;
+    --accent1-color: #133c55;
+    --accent2-color: #d9edf7;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+    margin-top: 16px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    margin: 16px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 24px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(19, 60, 85, 0.75);
+    color: #ffffff;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 28px;
+    left: 24px;
+    right: 24px;
+    background-color: rgba(217, 237, 247, 0.92);
+    color: #000000;
+    padding: 18px;
+    min-height: 120px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 20px;
+    border: 2px solid #ffffff;
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+section {
+    background-color: var(--accent2-color);
+    margin: 18px 16px;
+    padding: 18px 22px;
+}
+
+section h2 {
+    margin-bottom: 12px;
+    font-size: 2.2rem;
+}
+
+section p {
+    margin: 0;
+    padding: 8px 0 0 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 42px;
+    height: auto;
+    display: block;
+}
