@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #233f6b;
-    --secondary-color: #d6c7ee;
+    --primary-color: #1d3557;
+    --secondary-color: #d7c7f2;
     --accent1-color: #243b53;
-    --accent2-color: #f3f3f3;
+    --accent2-color: #f7f7f7;
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -40,39 +40,33 @@ article {
     padding: 8px;
 }
 
+/* Header */
 header {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--secondary-color);
-    padding: 12px 20px;
 }
 
 header img {
-    width: 90px;
-    height: auto;
+    width: 110px;
+    margin: 10px auto;
 }
 
 header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 60px;
-    margin: 0;
-    padding: 0;
 }
 
 header nav a {
     text-decoration: none;
     color: var(--accent1-color);
     font-weight: bold;
-    font-size: 18px;
+    padding: 10px;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-}
-
+/* Hero */
 .hero {
     position: relative;
 }
@@ -89,28 +83,28 @@ header nav a:hover {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(35, 63, 107, 0.88);
+    opacity: 0.85;
+    background-color: var(--primary-color);
     color: #ffffff;
-    font-size: 2.1rem;
 }
 
 .hero article {
     position: absolute;
-    bottom: 35px;
+    bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.86);
+    background-color: rgba(255, 255, 255, 0.88);
     color: #111111;
-    border: 1px solid #cfcfcf;
-    padding: 18px;
+    border: 1px solid #cccccc;
 }
 
 .hero article img {
     float: right;
-    width: 120px;
+    width: 125px;
     margin-left: 15px;
 }
 
+/* Sections */
 section {
     background-color: var(--accent2-color);
     margin-top: 20px;
@@ -122,29 +116,16 @@ section h2 {
     color: white;
     padding: 12px;
     margin: 0 0 10px 0;
-    font-size: 1.2rem;
 }
 
-section p {
-    padding: 18px;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-footer p {
-    margin: 0;
-    padding: 0;
-}
-
-.socialmedia {
-    margin: 0;
-    padding: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px 0;
 }
 
 .socialmedia a {
@@ -152,6 +133,6 @@ footer p {
 }
 
 .socialmedia img {
-    width: 36px;
-    margin-left: 12px;
+    width: 40px;
+    margin-left: 10px;
 }
