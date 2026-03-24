@@ -1,22 +1,29 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 1rem;
+    font-family: "Sansita", sans-serif;
 }
 
-.flex-container {
-    border: 3px dashed darkcyan;
-    background-color: lightyellow;
+nav {
+    background-color: #36454f;
+}
+
+nav ul {
+    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
-.flex-item {
-    width: 250px;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 20%);
-    padding: 0.5rem;
-    background-color: #bbb;
-    color: #333;
+nav li {
+    flex: 1 1 auto;
+
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 .item1 {
@@ -24,9 +31,9 @@ body {
 }
 
 .item2 {
-    min-height: 200px;
+    min-height: 150px;
 }
 
 .item3 {
-    min-height: 300px;
+    min-height: 200px;
 }
