@@ -1,47 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Quiz Form</title>
-    <link rel="stylesheet" href="styles/poll-form.css">
+    <title>About Us | The Rapids</title>
+    <meta name="description"
+      content="About The Rapids rafting company, our history, adventures, and exciting river trips.">
+    <meta name="author" content="Romina De Santis Cruz">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <header>
+        <img class="logo" src="images/z-raftingcompas.jpg" alt="The Rapids logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
     <main>
-        <h1>Basic HTML and CSS Quiz</h1>
+        <div class="hero">
+            <img src="images/rafting65.jpg" alt="White water rafting adventure">
+            <h1>White Water Rafting</h1>
 
-        <form action="#" method="get">
-            <div class="quiz-item">
-                <label for="q1">1. What does the acronym CSS stand for?</label>
-                <input type="text" id="q1" name="q1">
+            <article>
+                <p>
+                    At The Rapids, we create safe, exciting, and memorable river adventures for
+                    families,
+                    friends, and thrill seekers. Our mission is to connect people with nature
+                    through guided
+                    rafting experiences, excellent service, and unforgettable moments on the water.
+                </p>
+                <img src="images/emma-johnson.jpg" alt="Happy rafting client">
+            </article>
+        </div>
+
+        <section class="history">
+            <h2>History</h2>
+            <div class="history-content">
+                <p>
+                    The Rapids began with a love for rivers, nature, and outdoor adventure. What
+                    started as a
+                    small rafting service grew into a trusted company known for exciting and safe
+                    experiences
+                    on the water.
+                </p>
+
+                <img src="images/rafting20_600.jpg" alt="Rafting company history">
+
+                <p>
+                    Over the years, our team has guided families, friends, and adventurers through
+                    beautiful
+                    rapids and unforgettable trips. We continue to focus on safety, fun, and lasting
+                    memories
+                    for every guest.
+                </p>
             </div>
+        </section>
 
-            <div class="quiz-item">
-                <label for="q2">2. How are id and class attributes selected in CSS?</label>
-                <textarea id="q2" name="q2" rows="4"></textarea>
+        <section class="adventures">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/rafting14.jpg" alt="The Devil's Teeth rafting trip">
+                    <figcaption>The Devil's Teeth</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting20_600.jpg" alt="Big Mallard rafting trip">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting19_600.jpg" alt="Half Day Adventure rafting trip">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting42_600.jpg" alt="Rapid Rush rafting trip">
+                    <figcaption>Rapid Rush</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting47_600.jpg" alt="Thunder Run rafting trip">
+                    <figcaption>Thunder Run</figcaption>
+                </figure>
             </div>
-
-            <div class="quiz-item">
-                <label for="q3">3. Which of the following is a valid CSS comment?</label>
-                <select id="q3" name="q3">
-                    <option value="" selected disabled>Choose One ...</option>
-                    <option value="a">&lt;!-- This is a comment --&gt;</option>
-                    <option value="b">/* This is a comment */</option>
-                    <option value="c">// This is a comment</option>
-                </select>
-            </div>
-
-            <div class="quiz-item">
-                <label for="q4">4. What is the bottom margin given this declaration?</label>
-                <code>margin: 10px 5px 15px;</code>
-                <input type="number" id="q4" name="q4">
-            </div>
-
-            <button type="submit">Submit Quiz</button>
-        </form>
+        </section>
     </main>
+
+    <footer>
+        <p>© 2026 The Rapids | Romina De Santis Cruz</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://x.com">
+                <img src="images/twitter.svg" alt="X">
+            </a>
+        </nav>
+    </footer>
 </body>
 
 </html>
