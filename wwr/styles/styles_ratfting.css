@@ -181,29 +181,45 @@ header nav a:hover,
     background-color: var(--accent-color);
     padding: 25px;
     border-radius: 8px;
+    margin: 40px 0;
+}
+
+.newsletter h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
 .newsletter form {
     display: grid;
-    gap: 10px;
+    gap: 15px;
     max-width: 500px;
     margin: 0 auto;
 }
 
-.newsletter input,
-.newsletter button,
-.form-panel input,
-.form-panel textarea,
-.form-panel button {
-    padding: 10px;
-    font-size: 1rem;
+.form-row {
+    display: grid;
+    gap: 8px;
 }
 
-.newsletter button,
-.form-panel button {
+.newsletter label {
+    font-weight: bold;
+}
+
+.newsletter input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 10px;
+    font-size: 1rem;
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
