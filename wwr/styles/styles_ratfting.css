@@ -1,0 +1,378 @@
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #f1faee;
+    --light-color: #f8f9fa;
+    --dark-color: #222;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+header nav a:hover,
+.cta-button:hover,
+.newsletter button:hover,
+.form-panel button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.hero,
+.home-hero {
+    position: relative;
+    margin: 20px 0 40px;
+}
+
+.hero > img,
+.home-hero > img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    background-color: rgba(29, 53, 87, 0.8);
+    padding: 16px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    right: 40px;
+    background-color: rgba(241, 250, 238, 0.95);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero article img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.home-hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(29, 53, 87, 0.78);
+    color: var(--white);
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    width: 70%;
+}
+
+.history,
+.adventures,
+.newsletter,
+.trip-table-section,
+.cta,
+.company-block,
+.employees-panel,
+.trips-hero {
+    margin: 40px 0;
+}
+
+.history h2,
+.adventures h2,
+.newsletter h2,
+.trip-table-section h2,
+.cta h2,
+.employees-panel h2,
+.trips-hero h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.newsletter {
+    background-color: var(--accent-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input,
+.newsletter button,
+.form-panel input,
+.form-panel textarea,
+.form-panel button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.newsletter button,
+.form-panel button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.trips-hero,
+.cta {
+    text-align: center;
+    background-color: var(--accent-color);
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.grid-item {
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.trip-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trip-card h2,
+.trip-card p {
+    padding: 0 15px;
+}
+
+.trip-card h2 {
+    margin: 15px 0 10px;
+    color: var(--primary-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.contact-page {
+    margin-top: 20px;
+}
+
+.company-block {
+    text-align: center;
+}
+
+.company-block h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contact-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.map-panel iframe {
+    width: 100%;
+    min-height: 350px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.form-panel {
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.form-row textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.employee-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
